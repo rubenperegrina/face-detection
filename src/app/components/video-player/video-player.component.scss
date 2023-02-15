@@ -1,0 +1,25 @@
+:host {
+  position: relative;
+  display: block;
+}
+
+::ng-deep {
+  video, canvas {
+    width: 478px;
+    height: 360px;
+    object-fit: cover;
+    border: solid 0px transparent;
+  }
+
+  video {
+    background-color: white;
+    border: solid 0px white;
+    display: block;
+    width: 478px;
+  }
+
+  canvas {
+    top: 0;
+    position: absolute;
+  }
+}

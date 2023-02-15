@@ -1,0 +1,13 @@
+<div *ngIf="loadedModels">
+  <video
+    [width]="width"
+    [height]="height"
+    [style.width]="width + 'px'"
+    [style.height]="height + 'px'"
+    [style.borderColor]="currentColor"
+    #videoElement
+    (play)="listenerPlay()"
+    (loadedmetadata)="loadedMetaData()"
+    [srcObject]="source"
+  ></video>
+</div>

@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+::ng-deep {
+  .space-preview {
+    canvas {
+      position: relative;
+      width: 100%;
+      height: 25rem;
+    }
+  }
+
+  .canvas-preview {
+    position: relative;
+    canvas {
+      width: 100%;
+    }
+  }
+}
+
+.mood {
+  font-weight: 600;
+}
+
+.wrapper {
+  background-color: white;
+  .block-main {
+    display: grid;
+    height: calc(100% - 3.5rem);
+    .cam {
+      .placeholder {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    }
+  }
+}
